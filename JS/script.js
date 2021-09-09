@@ -1,6 +1,6 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
-    commands: 'Supported commands: <span class="code">about</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>.',
+    commands: 'Supported commands: <span class="code">about</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>, <span class="code">coding_profiles</span>.',
     about: "Hey! <br>I'm Jayanth Naidu. I'm a CS Undergrad from IARE who has a knack for coding.",
     skills: '<span class="code">Languages:</span> C/C++, Python3, Java, JavaScript.<br><span class="code">Frameworks:</span> Node.js, Express.<br><span class="code">Databases:</span> MongoDB, Firebase, MySQL.<br><span class="code">Tools:</span> Bash, Git & GitHub, Windows, Linux.',
     education: "Bachelor of Technology — Computer Science,<br>Institute Of Aeronautical Engineering, Hyderabad.",
