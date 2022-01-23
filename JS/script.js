@@ -5,7 +5,7 @@ const COMMANDS = {
     skills: '<span class="code">Languages:</span> C/C++, Python3, Java, JavaScript.<br><span class="code">Frameworks:</span> Node.js, Express.<br><span class="code">Databases:</span> MongoDB, Firebase, MySQL.<br><span class="code">Tools:</span> Bash, Git & GitHub, Windows, Linux.',
     education: "Bachelor of Technology — Computer Science,<br>Institute Of Aeronautical Engineering, Hyderabad.",
     resume: "<a href='./resume.pdf' class='success link'>resume.pdf</a>",
-    coding_profiles: "Codechef : <a href='https://codechef.com/users/noobguy77' class='success link '>noobguy77</a> <br>Codeforces : <a href='https://codeforces.com/profile/noobguy77' class='success link '>noobguy77</a>",
+    coding_profiles: "<br>LeetCode : <a href='https://leetcode.com/noobguy77/' class='success link '>noobguy77</a> <br>Codechef : <a href='https://codechef.com/users/noobguy77' class='success link '>noobguy77</a> <br>Codeforces : <a href='https://codeforces.com/profile/noobguy77' class='success link '>noobguy77</a>",
     contact: "Email: <a href='mailto:impmailonly7@gmail.com' class='success link'>impmailonly7@gmail.com</a> <br>LinkedIn : <a href='https://www.linkedin.com/in/jayanth-naidu-b03308186/' class='success link'>LinkedIn</a>",
 };
 var userInput, terminalOutput;
