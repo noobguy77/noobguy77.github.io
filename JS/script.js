@@ -1,12 +1,11 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
-    commands: 'Supported commands: <span class="code">about</span>,<span class="code">experience</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>, <span class="code">coding_profiles</span>.',
-    about: "Hey! <br>I'm Jayanth Naidu. I'm a CS Undergrad '23 who has a knack for coding.",
-    experience: "Currenly working as a Product Engineer at <a href='https://lji.io' class='success link '>Loyalty Juggernaut</a>",
-    skills: '<span class="code">Languages:</span> C/C++, Python3, Java, JavaScript.<br><span class="code">Frameworks:</span> SpringBoot, Express.js<br><span class="code">Databases:</span> MongoDB, MySQL.<br><span class="code">Tools:</span> Bash, Git & GitHub, Windows, Linux.<br><span class="code"> AWS Services:</span> EC2, Lambda, DynamoDB, S3 and Redshift',
+    commands: 'Supported commands: <span class="code">about</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>, <span class="code">coding_profiles</span>.',
+    about: "Hey! <br>I'm Jayanth Naidu. I'm a Backend Dev who has a knack for coding. I'm currently working as a Software Engineer at <a href='https://lji.io' class='success link '>DigitalOcean</a>",
+    skills: '<span class="code">Languages:</span> C/C++, Java & GO.<br><span class="code">Frameworks:</span> SpringBoot <br><span class="code">Databases:</span> MongoDB, MySQL.<br><span class="code">Tools:</span> Bash, Git & GitHub, Windows, Linux.<br><span class="code"> AWS Services:</span> EC2, ECS, EMR, Lambda, DynamoDB, S3 and Redshift',
     education: "Bachelor of Technology — Computer Science, CGPA - 8.50/10 <br>IARE Affiliated to JNTU Hyderabad.",
-    contact : "Number - (+91)9493269995, Email - impmailonly7@gmail.com",
-    resume: "<a href='https://drive.google.com/file/d/18QNFq-TfvGLKcYEKPSZk3RJEJI87tu6t/view?usp=sharing' target = '_blank' class='success link'>Click Here for Resume</a>",
+    contact : "Number - (+91)9493269995, Email - jayanthcse2023@gmail.com",
+    resume: "<a href='https://drive.google.com/file/d/1gWEdxVlC-xEI7W6NPrBfj3PV_Xvx6swP/view?usp=sharing' target = '_blank' class='success link'>Click Here for Resume</a>",
     coding_profiles: "GitHub :  <a href='https://github.com/noobguy77' class='success link '>noobguy77</a> <br>LeetCode : <a href='https://leetcode.com/noobguy77/' class='success link '>noobguy77</a> <br>Codechef : <a href='https://codechef.com/users/noobguy77' class='success link'>noobguy77</a> <br>Codeforces : <a href='https://codeforces.com/profile/noobguy77' class='success link '>noobguy77</a> "
 };
 var userInput, terminalOutput;
