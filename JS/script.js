@@ -38,16 +38,30 @@ const execute = (input) => {
 };
 
 const key = (e) => {
-    if(userInput.innerHTML.length > 10) {
+    if(userInput.innerHTML.length > 10 && e.key !== "Enter") {
         return;
     }
     const input = userInput.innerHTML;
 
-    console.log(e.keyCode);
 
-    if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
+    // Array of blacklisted key codes or names
+    const BLACKLISTED_KEYS = [
+        "Alt", "Tab", "CapsLock", "Shift", "Control", "Meta", 
+        "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"
+    ];
+
+    // Add corresponding keyCodes for compatibility (optional)
+    const BLACKLISTED_KEY_CODES = [
+        9, 20, 16, 17, 18, 91, // Tab, CapsLock, Shift, Control, Alt, Meta
+        112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123 // F1 to F12
+    ];
+
+    if (BLACKLISTED_KEYS.includes(e.key) || BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
+        console.log(`Ignored key: ${e.key}`);
         return;
     }
+
+    console.log(e.key)
 
     if (e.key === "Enter" || e.key === 'Return') {
         execute(input);
@@ -55,7 +69,12 @@ const key = (e) => {
         return;
     }
 
-    userInput.innerHTML = input + e.key;
+    if(e.key !== "Backspace" && e.key !== "Delete") {
+        userInput.innerHTML = input + e.key;
+    }
+
+    console.log(e.key+' '+e.keyCode+" "+userInput.innerHTML);
+
 };
 
 const backspace = (e) => {
