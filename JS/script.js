@@ -1,7 +1,7 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
     commands: 'Supported commands: <span class="code">about</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>, <span class="code">coding_profiles</span>.',
-    about: "Hey! <br>I'm Jayanth Naidu. I'm a Backend Dev who has a knack for coding. I'm currently working as a Software Engineer at <a href='https://lji.io' class='success link '>DigitalOcean</a>",
+    about: "Hey! <br>I'm Jayanth Naidu. I'm a Backend Dev who has a knack for coding. I'm currently working as a Software Engineer at <a href='https://www.digitalocean.com/' class='success link '>DigitalOcean</a>",
     skills: '<span class="code">Languages:</span> C/C++, Java & GO.<br><span class="code">Frameworks:</span> SpringBoot <br><span class="code">Databases:</span> MongoDB, MySQL.<br><span class="code">Tools:</span> Bash, Git & GitHub, Windows, Linux.<br><span class="code"> AWS Services:</span> EC2, ECS, EMR, Lambda, DynamoDB, S3 and Redshift',
     education: "Bachelor of Technology — Computer Science, CGPA - 8.50/10 <br>IARE Affiliated to JNTU Hyderabad.",
     contact : "Number - (+91)9493269995, Email - jayanthcse2023@gmail.com",
@@ -38,7 +38,12 @@ const execute = (input) => {
 };
 
 const key = (e) => {
+    if(userInput.innerHTML.length > 10) {
+        return;
+    }
     const input = userInput.innerHTML;
+
+    console.log(e.keyCode);
 
     if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
         return;
