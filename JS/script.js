@@ -38,9 +38,9 @@ const execute = (input) => {
 };
 
 const key = (e) => {
-    if(userInput.innerHTML.length > 10 && e.key !== "Enter") {
-        return;
-    }
+    // if(userInput.innerHTML.length > 10 && e.key !== "Enter") {
+    //     return;
+    // }
     const input = userInput.innerHTML;
 
 
