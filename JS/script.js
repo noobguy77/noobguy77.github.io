@@ -70,7 +70,7 @@ const backspace = (e) => {
 
 document.addEventListener("keydown", backspace);
 // The keypress event is fired when a key that produces a character value is pressed down.
-document.addEventListener("keypress", key);
+document.addEventListener("keydown", key);
 // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting
 // for stylesheets, images, and subframes to finish loading.
 document.addEventListener("DOMContentLoaded", app);
